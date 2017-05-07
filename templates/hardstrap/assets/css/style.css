@@ -154,12 +154,15 @@ a.btn-custom.btn-lg {
   line-height: 1.5;
   letter-spacing: 0px;
   display:block;
-  color:white;
 }
 
 .featurette-image {
-	height:300px !important;
-	width:300px !important;
+	max-height:300px !important;
+	max-width:300px !important;
+}
+
+.carouselItem .featurette-heading, .carouselItem .featurette-subheading{
+	color:white;
 }
 
 @media (min-width: 768px) {
@@ -288,7 +291,7 @@ a.btn-custom.btn-lg {
 }
 
 
-.imageSection {
+.randomSection {
     padding: 100px 0
 }
 
