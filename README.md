@@ -10,7 +10,7 @@ Because we love to share, this repository was created to host the design of hl.n
 * owl.carousel
 * jquery waypoints
 * jquery counterup
-* (bootstrap rtl)[https://github.com/morteza/bootstrap-rtl]
+* [bootstrap rtl](https://github.com/morteza/bootstrap-rtl)
 * Roboto Font
 
 ## Contributions
