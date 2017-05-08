@@ -24,6 +24,8 @@ $(document).ready(function() {
 	});
 });
 
+
+
 //Activate Promo close button
 $(document).ready(function() {
     $('#hidePromo').on('click', function(e) { 
