@@ -57,8 +57,6 @@ $(document).ready(function() {
         });
 });
 
-
-
 //Counter Up
 $(document).ready(function() {
 	var counterNumbers = $(".counter-number");
@@ -73,6 +71,11 @@ $(document).ready(function() {
 	
 });
 
+//Wow JS
+$(document).ready(function() {
+	new WOW().init();
+});
+              
 
 ! function($) {
     "use strict";

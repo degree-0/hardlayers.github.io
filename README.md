@@ -12,6 +12,8 @@ Because we love to share, this repository was created to host the design of hl.n
 * jquery counterup
 * [bootstrap rtl](https://github.com/morteza/bootstrap-rtl)
 * Roboto Font
+* Animate CSS
+* Wow JS
 
 ## Contributions
 If you're interested in enhancing our website to make it better, please feel free to do so
