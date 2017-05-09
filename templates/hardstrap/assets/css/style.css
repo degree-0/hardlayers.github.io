@@ -115,6 +115,14 @@ a.btn-custom-transparent:hover {
     background-color: #82b013;  
 }
 
+.text-reverse{
+	color:White;
+}
+
+.text-reverse a{
+	color:White;
+}
+
 /* Section Titles */
 .section-title h1,.section-title h2{
     margin-top: 0;
@@ -146,6 +154,12 @@ a.btn-custom-transparent:hover {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%)
+}
+
+.greenBack{
+	padding: 20px 0 50px;
+    background-color: #779e00;
+	position: relative;
 }
 
 .section-title.text-left h2:before {
@@ -222,6 +236,12 @@ a.btn-custom-transparent:hover {
     margin: 10px 15px
 }
 
+.text-orange{
+	color:#FF6C3A;
+}
+.text-blue{
+	color: #074E5E;
+}
 .bg-primary {
     background-color: #82b013!important;
     border-color: #82b013!important;
@@ -256,21 +276,22 @@ a.btn-custom-transparent:hover {
 	padding: 30px 0
 }
 #pageTitle:before {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	background-color: rgba(3, 19, 24, .8);
-    z-index: -1;
-	 position: absolute;
-    content: " ";
+    content: "";
+	position: absolute;
+	top: 0; 
+	left: 0;
+	width: 100%; 
+	height: 100%;
+	z-index: -1;
+	background-color: rgba(3, 19, 24, .9);
 }
-#pageTitle .section-title h2 {
-
+#pageTitle .section-title h1 {
+	margin-bottom:0px;
 }
 #pageTitle .description p {
     color: #fff;
-    margin: 0
+    margin: 0;
+	margin-top:4px;
 }
 
 .randomSection {
@@ -314,7 +335,6 @@ a.btn-custom-transparent:hover {
     border: none;
     border-radius: 0;
 	background-color: rgba(3, 19, 24, .8);
-   
     z-index: 1
 }
 #primaryNavbar #phoneNumber span{
@@ -342,9 +362,6 @@ a.btn-custom-transparent:hover {
     background-color: #9dca12;
 }
 .primary-menu-links li a,
-.primary-social-menu-links a {
-    color: white;
-}
 .primary-menu-links>li>a {
     font-size: 13px;
     font-weight: normal;
@@ -405,12 +422,8 @@ a.btn-custom-transparent:hover {
     padding: 2px 0;
     margin-top: 8px;
     margin-right: 0;
-    color: #fff;
     font-size: 24px;
     font-weight: 700
-}
-#secondaryMenu a.navbar-brand span {
-    color: #FF6C3A
 }
 .secondary-menu-links li a {
     color: #fff;
@@ -473,12 +486,56 @@ a.btn-custom-transparent:hover {
 
 /* 	Index Head
 */
+
+#page{
+    padding: 40px 0 30px;
+}
+
+#page .section-title{
+	margin-top:48px;
+}
+#page .section-title:first-child{
+	margin-top:0px;
+}
+#page .section-title h2 {
+	text-align:right;
+	margin-bottom:36px;
+	padding-bottom:12px;
+}
+
+#page .section-content, .section-content {
+	margin-bottom:24px;
+}
+
+#page .section-content h4 {
+	margin:0px;
+	padding:0px;
+	text-align:left;
+	line-height:1.8;
+}
+
+#page .section-content li {
+	margin-bottom:12px;
+	line-height:1.8;
+}
+
+#page .underlineGreen:before{
+    bottom: 0;
+    right: 0;
+	left:auto;
+    width: 100%;
+    height: 1px;
+    background-color: #aaaaaa;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%)
+}
+
 /* === Standard Section === */
 .carouselItem{
 	position: relative;
 	z-index: 1;
 	padding:70px;
-	color:white;
 }
 .carouselItem:before {
 	content: "";
@@ -506,7 +563,8 @@ a.btn-custom-transparent:hover {
     opacity: .6;
     filter: alpha(opacity=60);
     -webkit-transition: opacity .25s;
-    transition: opacity .25s
+    transition: opacity .25s;
+	color:black;
 }
 #carouselInner .owl-nav .owl-next:hover,
 #carouselInner .owl-nav .owl-prev:hover {
@@ -550,48 +608,28 @@ a.btn-custom-transparent:hover {
     background-color: #074E5E;
 	position: relative;
 }
-#domainSelector .top-content{
-    color: #fff;
-	text-align:center;
+#domainSelector .domain-content {
+    padding: 15px 0 0;
 }
-#domainSelector .left-content{
-    color: #fff
-}
-#domainSelector .left-content h2{
-    color: inherit;
-    font-size: 45px;
-    font-weight: 900;
-    margin: 0;
-    padding: 6px 0 12px
-}
-#domainSelector .left-content p{
-    font-size: 21px;
-    font-weight: 300;
-    margin: 0
-}
-#domainSelector .right-content {
-    padding: 15px 20px 0 15px
-}
-#domainSelector .right-content .domain-ext {
+#domainSelector .domain-content .domain-ext {
     margin: 20px -10px 0
 }
-#domainSelector .right-content .domain-ext>div {
+#domainSelector .domain-content .domain-ext>div {
     padding: 0 10px
 }
-#domainSelector .right-content a.extension {
+#domainSelector .domain-content a.extension {
     display: block;
     font-weight: 500;
     border-left: 1px solid #fff;
 	text-align: right;
-	color:white;
 }
-#domainSelector .right-content .domain-ext>div:last-child a.extension{
+#domainSelector .domain-content .domain-ext>div:last-child a.extension{
     border: none
 }
-#domainSelector .right-content a.extension span {
+#domainSelector .domain-content a.extension span {
     display: block
 }
-#domainSelector .right-content a.extension span.name {
+#domainSelector .domain-content a.extension span.name {
     font-size: 22px;
 	direction: ltr;
 }
@@ -620,8 +658,6 @@ a.btn-custom-transparent:hover {
     background: #FF6C3A;
     border: 0;
     border-radius: 0;
-    color: #fff;
-    cursor: pointer;
     float: left;
     font-size: 16px;
     font-weight: 700;
@@ -706,7 +742,6 @@ a.btn-custom-transparent:hover {
     background-color: rgba(0, 0, 0, .8)
 }
 #vpsPricing .top-content {
-    color: #fff;
 	text-align:center;
 	margin-bottom:32px;
 }
@@ -750,7 +785,6 @@ a.btn-custom-transparent:hover {
     margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #fff;
     text-align: center
 }
 .vps-item-feature:last-child {
@@ -770,14 +804,13 @@ a.btn-custom-transparent:hover {
 }
 .vps-total-price {
     margin-top: 30px;
-    color: #fff;
     font-size: 22px;
     font-weight: 300;
     text-align: center
 }
 .vps-total-price span {
-    font-size: 42px;
-    font-weight: 700
+    font-size: 36px;
+    font-weight: normal;
 }
 #vpsPricing .action {
     text-align: center;

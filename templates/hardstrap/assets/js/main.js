@@ -82,60 +82,44 @@ $(document).ready(function() {
 ! function($) {
     "use strict";
     $(document).ready(function() {
-        
-
-		var t = $("#vpsSlider"),
-            u = $(".vps-item-cpu"),
-            v = $(".vps-item-ram"),
-            w = $(".vps-item-space"),
-            x = $(".vps-item-bandwidth"),
-            y = $(".vps-total-price span"),
-            z = $(".vps-item-setup"),
-            A = $(".vps-item-ip");
-        t.length && (t.slider({
+		var mySlider = $("#vpsSlider"),
+            cpuDiv = $(".vps-item-cpu"),
+            ramDiv = $(".vps-item-ram"),
+            spaceDiv = $(".vps-item-space"),
+            bandDiv = $(".vps-item-bandwidth"),
+            priceDiv = $(".vps-total-price span"),
+            setupDiv = $(".vps-item-setup"),
+            ipsDiv = $(".vps-item-ip");
+		var handleText, coreText, ramText, spaceText, bandText, priceText, setupText, ipText;
+        mySlider.length && (mySlider.slider({
             animate: "fast",
             range: "min",
             min: 0,
             max: 2,
             value: 1,
             step: 1,
-            slide: function(b, c) {
-                var d, e, f, g, h, i, j, k;
-                switch (c.value) {
+            slide: function(event, ui) {
+                switch (ui.value) {
                     case 0:
-                        d = "VPS مبدتئين", 
-						e = "1 نواة", 
-						f = "1 GB", 
-						g = "100 GB", 
-						h = "1000 GB", 
-						i = "$9.99", 
-						j = "مجانا", 
-						k = "حتى 1";
+                        handleText = "VPS مبدتئين", coreText = "1 نواة", ramText = "1 GB", spaceText = "100 GB", bandText = "1000 GB", priceText = "$9.99", setupText = "مجانا", ipText = "حتى 1";
                         break;
                     case 1:
-                        d = "VPS كويس", 
-						e = "2 نواة", 
-						f = "2 GB", 
-						g = "200 GB", 
-						h = "2000 GB", 
-						i = "$29.99", 
-						j = "مجانا", 
-						k = "حتى 2";
+                        handleText = "VPS كويس", coreText = "2 نواة", ramText = "2 GB", spaceText = "200 GB", bandText = "2000 GB", priceText = "$29.99", 	setupText = "مجانا", ipText = "حتى 2";
                         break;
                     case 2:
-                        d = "VPS ممتاز", e = "3 نواة", f = "3 GB", g = "300 GB", h = "3000 GB", i = "$59.99", j = "مجانا", k = "حتى 3";
+                        handleText = "VPS ممتاز", coreText = "3 نواة", ramText = "3 GB", spaceText = "300 GB", bandText = "3000 GB", priceText = "$59.99", setupText = "مجانا", ipText = "حتى 3";
                         break;
                 }
-                u.text(e), 
-				v.text(f), 
-				w.text(g), 
-				x.text(h), 
-				y.text(i),
-				z.text(j), 
-				A.text(k), 
-				$("#vpsSlider .ui-slider-handle").text(d)
+                cpuDiv.text(coreText), 
+				ramDiv.text(ramText), 
+				spaceDiv.text(spaceText), 
+				bandDiv.text(bandText), 
+				priceDiv.text(priceText),
+				setupDiv.text(setupText), 
+				ipsDiv.text(ipText), 
+				$("#vpsSlider .ui-slider-handle").text(handleText)
             }
-        }), $("#vpsSlider .ui-slider-handle").text("VPS 2"));
+        }), $("#vpsSlider .ui-slider-handle").text("VPS كويس"));
         
     })
 }(jQuery);
