@@ -28,6 +28,11 @@
 	font-family: 'KFGQPC Uthman Taha Naskh';
 	font-family: 'PDMS Saleem QuranFont';
 	font-family: AmiriWeb;
+  font-family: 'Dubai-Bold', Helvetica, sans-serif;
+  font-family: 'Dubai-Medium', Helvetica, sans-serif;
+  font-family: 'Dubai-Regular', Helvetica, sans-serif;
+  font-family: 'Dubai-Light', Helvetica, sans-serif;
+}
 	*/
 
 /* ===============
@@ -40,8 +45,8 @@ body {
 }
 
 body {
-    font-family: 'JF Flat Jozoor',Roboto, sans-serif!important;
-    font-weight: 300
+    font-family: 'Dubai-Bold',Roboto, sans-serif!important;
+    font-weight: normal
 }
 
 h1,

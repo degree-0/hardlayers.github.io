@@ -15,6 +15,9 @@ Because we love to share, this repository was created to host the design of hl.n
 * Animate CSS
 * Wow JS
 
+## Things to consider
+* [noUiSlider](https://refreshless.com/nouislider/examples/)
+
 ## Contributions
 If you're interested in enhancing our website to make it better, please feel free to do so
 
