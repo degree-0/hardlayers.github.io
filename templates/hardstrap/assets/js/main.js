@@ -87,10 +87,8 @@ $(document).ready(function() {
             ramDiv = $(".vps-item-ram"),
             spaceDiv = $(".vps-item-space"),
             bandDiv = $(".vps-item-bandwidth"),
-            priceDiv = $(".vps-total-price span"),
-            setupDiv = $(".vps-item-setup"),
-            ipsDiv = $(".vps-item-ip");
-		var handleText, coreText, ramText, spaceText, bandText, priceText, setupText, ipText;
+            priceDiv = $(".vps-total-price span");
+		var handleText, coreText, ramText, spaceText, bandText, priceText;
         mySlider.length && (mySlider.slider({
             animate: "fast",
             range: "min",
@@ -101,13 +99,13 @@ $(document).ready(function() {
             slide: function(event, ui) {
                 switch (ui.value) {
                     case 0:
-                        handleText = "VPS مبدتئين", coreText = "1 نواة", ramText = "1 GB", spaceText = "100 GB", bandText = "1000 GB", priceText = "$9.99", setupText = "مجانا", ipText = "حتى 1";
+                        handleText = "VPS مبدتئين", coreText = "1 نواة", ramText = "1 GB", spaceText = "100 GB", bandText = "1000 GB", priceText = "$9.99";
                         break;
                     case 1:
-                        handleText = "VPS كويس", coreText = "2 نواة", ramText = "2 GB", spaceText = "200 GB", bandText = "2000 GB", priceText = "$29.99", 	setupText = "مجانا", ipText = "حتى 2";
+                        handleText = "VPS كويس", coreText = "2 نواة", ramText = "2 GB", spaceText = "200 GB", bandText = "2000 GB", priceText = "$29.99";
                         break;
                     case 2:
-                        handleText = "VPS ممتاز", coreText = "3 نواة", ramText = "3 GB", spaceText = "300 GB", bandText = "3000 GB", priceText = "$59.99", setupText = "مجانا", ipText = "حتى 3";
+                        handleText = "VPS ممتاز", coreText = "3 نواة", ramText = "3 GB", spaceText = "300 GB", bandText = "3000 GB", priceText = "$59.99";
                         break;
                 }
                 cpuDiv.text(coreText), 
@@ -115,8 +113,7 @@ $(document).ready(function() {
 				spaceDiv.text(spaceText), 
 				bandDiv.text(bandText), 
 				priceDiv.text(priceText),
-				setupDiv.text(setupText), 
-				ipsDiv.text(ipText), 
+				
 				$("#vpsSlider .ui-slider-handle").text(handleText)
             }
         }), $("#vpsSlider .ui-slider-handle").text("VPS كويس"));

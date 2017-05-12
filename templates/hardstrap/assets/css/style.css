@@ -45,8 +45,9 @@ body {
 }
 
 body {
-    font-family: 'Dubai-Bold',Roboto, sans-serif!important;
-    font-weight: normal
+	font-family: 'Dubai-medium',Roboto, sans-serif!important;
+	font-weight: normal;
+	font-style: normal;
 }
 
 h1,
@@ -55,7 +56,8 @@ h3,
 h4,
 h5,
 h6{
-	font-family: 'Droid Arabic Kufi',Roboto, sans-serif!important;
+	font-family: 'NeoSans-bold',Roboto, sans-serif!important;
+
 }
 
 a,
