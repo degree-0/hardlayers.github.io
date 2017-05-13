@@ -35,8 +35,7 @@
 }
 	*/
 
-/* ===============
-  GLOBAL SETTINGS 
+/* GLOBAL SETTINGS 
   =============== */
 html,
 body {
@@ -45,21 +44,82 @@ body {
 }
 
 body {
-	font-family: 'Dubai-medium',Roboto, sans-serif!important;
+	font-family: 'Dubai-light',Roboto, sans-serif!important;
 	font-weight: normal;
 	font-style: normal;
+	font-size:20px;
+	
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-	font-family: 'NeoSans-bold',Roboto, sans-serif!important;
-
+/* Typography SETTINGS 
+  ==================== */
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+    font-family: 'NeoSans-bold',Roboto, sans-serif!important;
+    margin: 0;
+    font-weight: normal;
+    text-transform: none;
+	line-height:1.8;
+}
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small {
+    font-weight: normal;
+    line-height: 1;
+    color: #999
+}
+.text-white, .text-white a{
+	color:#ffffff !important;
+}
+.text-orange{
+	color:#FF6C3A;
+}
+.text-blue{
+	color: #074E5E;
 }
 
+/* Section Titles */
+.section-title h1,.section-title h2{
+    margin-top: 0;
+	margin-bottom: 60px;
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.section-title h1 {
+	font-size: 36px;
+	line-height:1.5;  
+}
+.section-title h2 {   
+    font-size: 24px;
+    line-height: 28px;
+}
+.section-title.text-left h2:before {
+    left: 0;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+}
+.underlineGreen{
+	position:relative;
+}
+.underlineGreen:before{
+	content: " ";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: #9dca12;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.description {
+    font-size: 18px;
+}
+
+/* Links & Dropdowns 
+   Buttons
+  =============== */
 a,
 a:active,
 a:hover,
@@ -70,15 +130,12 @@ a:visited {
     outline: 0
 }
 
-/*PRIMARY SETTINGS 
-  =============== */
-  /* -- Buttons -- */
+/* -- Buttons -- */
 /* Normal State and inverse*/
 a.btn,a.btn:hover,a.btn:focus {
     font-weight: 400;
 	color:white;
 }
-
 a.btn-custom {
     background-color: #2e3138;
     border-radius: 0;
@@ -91,7 +148,6 @@ a.btn-custom:hover {
     background-color: #82b013;
     box-shadow: none
 }
-
 a.btn-custom-reverse {
     background-color: #82b013;
     border-radius: 0;
@@ -104,13 +160,16 @@ a.btn-custom-reverse:hover {
     background-color: #2e3138;
     box-shadow: none;
 }
-
 a.btn-custom-reverse.btn-lg,
 a.btn-custom.btn-lg {
     padding: 12px 20px;
     font-size: 16px;
 }
-
+a.btn-custom-reverse.btn-x-lg,
+a.btn-custom.btn-x-lg {
+	font-size:26px;
+    padding: 12px 20px;
+}
 a.btn-custom-transparent {
     background-color:transparent;
     border-radius: 0;
@@ -122,6 +181,7 @@ a.btn-custom-transparent:hover {
     background-color: #82b013;  
 }
 
+/* -- Alerts -- */
 .alert {
   border: 0;
   border-radius: 0;
@@ -195,7 +255,6 @@ a.btn-custom-transparent:hover {
 .alert .alert-icon i {
   position: relative;
 }
-
 .material-icons {
     font-weight: normal;
     font-style: normal;
@@ -209,7 +268,6 @@ a.btn-custom-transparent:hover {
     direction: ltr;
     -webkit-font-smoothing: antialiased;
 }
-
 .close {
     font-size: inherit;
     color: #FFFFFF;
@@ -220,64 +278,97 @@ a.btn-custom-transparent:hover {
     font-size: 14px;
 }
 
-.text-reverse{
-	color:White;
+/* Sections Divs */
+.sectionBig{
+	padding: 70px 0;
 }
-
-.text-reverse a{
-	color:White;
+.sectionSmall{
+	padding: 30px 0;
 }
-
-/* Section Titles */
-.section-title h1,.section-title h2{
-    margin-top: 0;
-	margin-bottom: 80px;
-	text-align: center;
-	font-weight: 700;
-	text-transform: uppercase;
+.bg-primary {
+    background-color: #82b013!important;
+    border-color: #82b013!important;
 }
-.section-title h1 {
-	font-size: 36px;
-	line-height:1.5;  
+.bg-orange {
+	color:white;
+    background-color: #FF6C3A!important;
+    border-color: #FF6C3A!important;
 }
-.section-title h2 {   
-    font-size: 24px;
-    line-height: 28px;
+.bg-grey {
+	color:white;
+    background-color: #4d4d4d!important;
+    border-color: #4d4d4d!important;
 }
-
-.underlineGreen{
+.bg-blue {
+	color:white;
+    background-color: #074E5E!important;
+    border-color: #074E5E!important;
+}
+.bg-green {
+	color:white;
+    background-color: #779e00!important;
+    border-color: #779e00!important;
+}
+.bg-silver {
+    background-color: #f0f0f0!important;
+    border-color: #f0f0f0!important;
+}
+.lighter, .darker, .bluer, .greyer, .x-lighter, .x-greyer, .x-darker{
 	position:relative;
+	z-index:0;
 }
-.underlineGreen:before{
-	content: " ";
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    width: 50px;
-    height: 2px;
-    background-color: #9dca12;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%)
+.lighter:before, .darker:before, .bluer:before, .greyer:before, .x-lighter:before, .x-greyer:before, .x-darker:before{
+	content: "";
+	position: absolute;
+	top: 0; 
+	left: 0;
+	width: 100%; 
+	height: 100%;
+	z-index: -1;
+}
+.lighter:before{
+	background-color:rgba(255,255,255,0.8);
+}
+.x-lighter:before{
+	background-color:rgba(255,255,255,0.9);
+}
+.darker:before{
+	background-color:rgba(0,0,0,0.8);
+}
+.x-darker:before{
+	background-color:rgba(0,0,0,0.9);
+}
+.bluer:before{
+	background-color: rgba(0, 45, 66, 0.9);
+}
+.greyer:before{
+	background-color: rgba(3, 19, 24, .8);
+	
+}
+.x-greyer:before{
+	background-color: rgba(3, 19, 24, .9);
+	
 }
 
-.greenBack{
-	padding: 20px 0 50px;
-    background-color: #779e00;
-	position: relative;
+.bgPicture{
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-attachment:fixed;
 }
 
-.section-title.text-left h2:before {
-    left: 0;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0)
+/*  ## Featurettes */
+.featurette > .row{
+	display:table;
+	margin-right: 0;
+    margin-left: 0;
+	width:100%;
 }
-
-/*  ## Featurettes
-	Thin out the marketing headings
-	Mainly for Carousel use
-*/
+.featurette > .row > div {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
 .featurette-heading, .featurette-subheading {
   font-weight: 300;
   line-height: 1.5;
@@ -287,26 +378,11 @@ a.btn-custom-transparent:hover {
 .featurette-image {
 	max-height:300px !important;
 	max-width:300px !important;
+	display:inline-block;
+	vertical-align:center;
 }
 .carouselItem .featurette-heading, .carouselItem .featurette-subheading{
 	color:white;
-}
-
-.reset-gutter,
-.reset-margin {
-    margin-right: 0;
-    margin-left: 0
-}
-.reset-gutter>[class*=col-],
-.reset-padding {
-    padding-right: 0;
-    padding-left: 0
-}
-.hc-margin {
-    margin: 0 auto
-}
-.no-float {
-    float: none!important
 }
 
 #separatorArrow{
@@ -341,83 +417,38 @@ a.btn-custom-transparent:hover {
     margin: 10px 15px
 }
 
-.text-orange{
-	color:#FF6C3A;
+.reset-gutter,
+.reset-margin {
+    margin-right: 0;
+    margin-left: 0
 }
-.text-blue{
-	color: #074E5E;
+.reset-gutter>[class*=col-],
+.reset-padding {
+    padding-right: 0;
+    padding-left: 0
 }
-.bg-primary {
-    background-color: #82b013!important;
-    border-color: #82b013!important;
+.hc-margin {
+    margin: 0 auto
 }
-.bg-orange {
-	color:white;
-    background-color: #FF6C3A!important;
-    border-color: #FF6C3A!important;
-}
-.bg-grey {
-	color:white;
-    background-color: #4d4d4d!important;
-    border-color: #4d4d4d!important;
-}
-.bg-blue {
-	color:white;
-    background-color: #074E5E!important;
-    border-color: #074E5E!important;
+.no-float {
+    float: none!important
 }
 
 /*HL Different Sections*/
 /* Page Titles First */
 #pageTitle {
     margin-top: 0;
-	color:white;
-    position: relative;
-    text-align: center;
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-	padding: 30px 0
-}
-#pageTitle:before {
-    content: "";
-	position: absolute;
-	top: 0; 
-	left: 0;
-	width: 100%; 
-	height: 100%;
-	z-index: -1;
-	background-color: rgba(3, 19, 24, .9);
-}
-#pageTitle .section-title h1 {
-	margin-bottom:0px;
-}
-#pageTitle .description p {
-    color: #fff;
-    margin: 0;
-	margin-top:4px;
 }
 
-.randomSection {
-    padding: 40px 0
-}
-.about-desc-content {
-    margin-top: 30px
-}
-
-#requestQuote{
-	padding:30px 0;
-}
 #requestQuote a.btn{
 	border:1px solid #ffffff;
 	margin-top:20px;
 }
 
-/* Promo Section
-*/
+/* === Promo Section === */
 #promo {
     z-index: 1;
+	padding:10px;
 }
 #promo.alert {
     margin-bottom: 0;
@@ -430,20 +461,16 @@ a.btn-custom-transparent:hover {
     line-height:20px;
 }
 
-#bg{
-	background-position:center;
-	background-attachment:fixed;
-}
 
-/* Menus Section
-*/
-/* === Primary === */
+/* === Primary Menu === */
 #primaryMenu {
     margin: 0;
     border: none;
     border-radius: 0;
 	background-color: rgba(3, 19, 24, .8);
-    z-index: 1
+    z-index: 1;
+	font-size:13px;
+	line-height:1.3;
 }
 #primaryNavbar #phoneNumber span{
 	opacity:0;
@@ -475,6 +502,7 @@ a.btn-custom-transparent:hover {
     font-weight: normal;
     text-transform: uppercase;
 	font-family:tahoma;
+	padding:10px 12px;
 }
 #primaryMenu .nav>li>a:focus,
 #primaryMenu .nav>li>a:hover {
@@ -592,13 +620,7 @@ a.btn-custom-transparent:hover {
     color: #fff;
 }
 
-/* 	Index Head
-*/
-
-#page{
-    padding: 40px 0 30px;
-}
-
+/* === Normal Pages Section === */
 #page .section-title{
 	margin-top:48px;
 }
@@ -610,23 +632,19 @@ a.btn-custom-transparent:hover {
 	margin-bottom:36px;
 	padding-bottom:12px;
 }
-
 #page .section-content, .section-content {
 	margin-bottom:24px;
 }
-
 #page .section-content h4 {
 	margin:0px;
 	padding:0px;
 	text-align:left;
 	line-height:1.8;
 }
-
 #page .section-content li {
 	margin-bottom:12px;
 	line-height:1.8;
 }
-
 #page .underlineGreen:before{
     bottom: 0;
     right: 0;
@@ -639,24 +657,11 @@ a.btn-custom-transparent:hover {
     transform: translateX(0%)
 }
 
-/* === Standard Section === */
+/* === Carousel Slider Section === */
 .carouselItem{
-	position: relative;
-	z-index: 1;
 	padding:70px;
 }
-.carouselItem:before {
-	content: "";
-	position: absolute;
-	top: 0; 
-	left: 0;
-	width: 100%; 
-	height: 100%;
-	z-index: -1;
-	background-color: rgba(3, 19, 24, .8);
-}
 
-/* === Carousel JS Stuff === */
 #carouselInner .owl-nav .owl-next,
 #carouselInner .owl-nav .owl-prev {
     position: absolute;
@@ -711,11 +716,6 @@ a.btn-custom-transparent:hover {
 
 /* 	Get Domin offer
 */
-#domainSelector{
-    padding: 20px 0 50px;
-    background-color: #074E5E;
-	position: relative;
-}
 #domainSelector .domain-content {
     padding: 15px 0 0;
 }
@@ -785,9 +785,6 @@ a.btn-custom-transparent:hover {
 
 /* 	Features Section 
 */
-#features {
-    padding: 70px 0 80px;
-}
 #features hr {
     margin: 30px 0
 }
@@ -828,27 +825,9 @@ a.btn-custom-transparent:hover {
     margin: 15px 0
 }
 
+
 /* 	VPS Slider Section 
 */
-#vpsPricing {
-    padding: 50px 0;
-    z-index: 0;
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-	position: relative;
-	background-attachment:fixed;
-}
-#vpsPricing:before {
-    content: " ";
-    position: absolute;
-    right: 0;
-    z-index: -1;
-	top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .8)
-}
 #vpsPricing .top-content {
 	text-align:center;
 	margin-bottom:32px;
@@ -931,10 +910,6 @@ a.btn-custom-transparent:hover {
 
 /* 	Our Services Section 
 */
-#services {
-    padding: 40px 0 30px;
-    overflow: hidden;
-}
 #services .service{
 	padding: 60px 0;
 }
@@ -1011,26 +986,6 @@ a.btn-custom-transparent:hover {
 
 /* 	Counter Section
 */
-#Counter {
-    background-color: #FF6C3A;
-    text-align: center;
-	color:white;
-	padding:30px 0;
-	z-index: 0;
-	position:relative;
-	font-weight: 100;
-	background-attachment:fixed;
-}
-#Counter:before {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	background-color: rgba(0, 45, 66, 0.9);
-    z-index: -1;
-	 position: absolute;
-    content: " ";
-}
 #Counter .counter-text {
     font-size:18px;	
 }
@@ -1041,10 +996,6 @@ a.btn-custom-transparent:hover {
 
 /* 	Pricing Section, Pricing Tables and Compares
 */
-#pricing {
-    padding: 100px 0;
-    background-color: #f0f0f0
-}
 .pricing-table-item {
     background-color: #fff;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14)
@@ -1103,14 +1054,8 @@ a.btn-custom-transparent:hover {
     width: 100px;
     padding: 8px 0
 }
-.footer-widget h4 {
-    font-weight: 700;
-    text-transform: uppercase
-}
 
-#pricingTable {
-    padding: 100px 0
-}
+
 #pricingTable .pricing-table-item,
 #pricingTable .pt-features {
     padding: 0
@@ -1125,13 +1070,6 @@ a.btn-custom-transparent:hover {
     border-top: 1px solid #e9e9e9
 }
 
-#pricingTable2{
-    padding: 100px 0;
-}
-#pricingTable2.domains-page {
-    background-color: #f8f8f8;
-    border-top: 1px solid #e9e9e9
-}
 #pricingTable2 table {
     width: 100%;
     margin: 0;
@@ -1172,72 +1110,9 @@ a.btn-custom-transparent:hover {
     font-size: 18px
 }
 
-#compare {
-    background-color: #f0f0f0;
-	padding: 100px 0;
-}
-#compare table{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #ccc;
-    border-spacing: 0;
-    border-collapse: collapse
-}
-#compare table thead {
-    background-color: #FF6C3A;
-    color: #fff
-}
-#compare table thead th {
-    padding: 15px 10px
-}
-#compare table td,
-#compare table th {
-    padding: 10px
-}
-#compare table th {
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px
-}
-#compare table tr {
-    border: 1px solid #ddd;
-    padding: 5px
-}
-#compare table tbody tr{
-    background-color: #fff
-}
-#compare table tbody tr:nth-child(even) td {
-    background-color: #f8f8f8
-}
-
-#stillDontKnow a.btn-custom{
-	font-size:30px;
-	margin-top: 8px;
-    margin-bottom: 0px;
-}
-
 /*=== End of Page ==
 */
 /* === Brands === */
-#brands {
-    padding: 30px 0;
-    position: relative;
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-}
-#brands:before {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .95);
-    z-index: -1;
-	 content: " ";
-    position: absolute;
-}
 #brands img{
 	-webkit-filter:brightness(0) invert(0.9) contrast(80%);filter:brightness(0) invert(0.9) contrast(80%);
 	width:70%;
@@ -1245,14 +1120,6 @@ a.btn-custom-transparent:hover {
 }
 
 /* === Real Footer === */
-#footerBg{
-	background-attachment:fixed;
-}
-#footer {
-    padding: 50px 0;
-    background-color: rgba(0, 0, 0, .9);
-    overflow: hidden
-}
 .footer-about {
     color: #fff
 }
@@ -1265,13 +1132,11 @@ a.btn-custom-transparent:hover {
 }
 .footer-widget h4:before {
     position: absolute;
-    content: " "
-}
-.footer-widget h4:before {
-    width: 40px;
+    content: " ";
+	width: 40px;
     height: 2px;
     background-color: #9dca12;
-    bottom: 0
+    bottom: 0;
 }
 .footer-about p {
     margin-top: 20px;
@@ -1279,7 +1144,7 @@ a.btn-custom-transparent:hover {
 }
 .footer-about a{
 	font-weight:bold;
-	
+	color: #bfe352;
 }
 .footer-widget ul {
     margin: 20px 0 40px;
@@ -1300,7 +1165,7 @@ a.btn-custom-transparent:hover {
     margin: 2px 0;
     padding-bottom: 5px;
 }
-#footer .footer-widget ul li:last-child a {
+.footer-widget ul li:last-child a {
     border-bottom: none;
 }
 .footer-widget a:hover {
@@ -1309,24 +1174,17 @@ a.btn-custom-transparent:hover {
 }
 
 /* === CopyRights === */
-#copyright {
-    padding: 20px 0 18px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, .95);
-    text-align: center
-}
 #copyright p {
     margin-bottom: 0
 }
 #copyright p a {
     display: inline-block;
-    margin-top: 5px;
     padding-bottom: 2px;
-    color: #bfe352;
-    font-weight: 700
+    color: #bfe352 !important;
+    font-weight: bold;
 }
 #copyright img {
-    margin-left: 20px;
+    margin-right: 20px;
     height: 24px
 }
 
@@ -1366,7 +1224,6 @@ a.btn-custom-transparent:hover {
     margin: 70px 0 30px;
     font-size: 20px;
 }
-
 
 /* === Responsiveness Section === */
 @media (min-width: 768px) {
@@ -1568,15 +1425,7 @@ a.btn-custom-transparent:hover {
     .carouselItem .featurette {
         text-align: center
     }
-    #header {
-        height: auto;
-        min-height: auto;
-        padding-top: 155px
-    }
-    .header-item-content-holder+.header-item-img-holder,
-    .header-item-img-holder+.header-item-content-holder {
-        margin: 45px auto 50px
-    }
+
     #domainSearchForm select.form-control {
         border-left: none;
         border-top: 1px solid #e9e9e9
@@ -1599,6 +1448,16 @@ a.btn-custom-transparent:hover {
         margin-bottom: 50px
     }
     
+	.text-left{
+		text-align:center;
+	}
+	.text-right{
+		text-align:center;
+	}
+	.featurette .btn{
+		margin:26px auto;
+	}
+
     #features .row:last-child .feature-item:last-child {
         border-bottom: none;
         margin-bottom: 0;

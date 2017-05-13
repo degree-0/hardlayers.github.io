@@ -32,8 +32,8 @@
     <![endif]-->
 </head>
 <body>
-	<div id="bg" class="text-reverse" data-bg-src="templates/hardstrap/assets/img/header-slider-img/slider-bg-5.jpg">
-		<nav class="navbar" id="primaryMenu">
+	<div id="bg" class="text-reverse bgPicture text-white" data-bg-src="templates/hardstrap/assets/img/header-slider-img/slider-bg-5.jpg">
+		<nav class="navbar " id="primaryMenu">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggle collapsed" data-target="#primaryNavbar" data-toggle="collapse" type="button">
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 		</nav>
-		<nav class="navbar " id="secondaryMenu">
+		<nav class="navbar" id="secondaryMenu">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggle collapsed" data-target="#secondaryNavbar" data-toggle="collapse" type="button">
@@ -153,7 +153,7 @@
 				</div>
 			</div>
 		</nav>
-		<div id="pageTitle" >
+		<div id="pageTitle" class="text-center sectionSmall text-white darker" >
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
@@ -166,7 +166,7 @@
 		</div>
 	</div>
 
-	<div id="page">
+	<div id="page" class="sectionBig">
 		<div class="container">
 			<div class="row section-content">
 				<div class="col-md-2">
@@ -508,26 +508,7 @@
 	<!-- ==== Main JavaScript ==== -->
 	<script src="templates/hardstrap/assets/js/main.js"></script>
 	<script>
-	$(document).ready(function() {
-		// The function actually applying the offset
-		function offsetAnchor() {
-		  if (location.hash.length !== 0) {
-			window.scrollTo(window.scrollX, window.scrollY - 100);
-		  }
-		}
-
-		// Captures click events of all <a> elements with href starting with #
-		$(document).on('click', 'a[href^="#"]', function(event) {
-		  // Click events are captured before hashchanges. Timeout
-		  // causes offsetAnchor to be called after the page jump.
-		  window.setTimeout(function() {
-			offsetAnchor();
-		  }, 0);
-		});
-
-		// Set the offset when entering page with hash present in the url
-		window.setTimeout(offsetAnchor, 0);
-	});
+	
 	</script>
 </body>
 </html>

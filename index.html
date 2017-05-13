@@ -32,7 +32,7 @@
     <![endif]-->
 </head>
 <body>
-	<div class="alert alert-danger hidden-sm hidden-xs" id="promo">
+	<div id="promo" class="alert alert-danger hidden-sm hidden-xs">
 		<div class="container">
 			<div class="alert-icon">
 				<i class="material-icons"><i class="fa fa-usd" aria-hidden="true"></i></i>
@@ -45,9 +45,8 @@
 			<b>لمدة محدودة فقط!</b> خصم من أي طلب بالموقع, ماعليك سوى إستخدام كوبون الخصم "NewSite10"
 		</div>
 	</div>
-
-	<div id="bg" class="text-reverse" data-bg-src="templates/hardstrap/assets/img/header-slider-img/slider-bg-5.jpg">
-		<nav class="navbar" id="primaryMenu">
+	<div id="header" class="text-white bgPicture" data-bg-src="templates/hardstrap/assets/img/header-slider-img/slider-bg-5.jpg">
+		<nav id="primaryMenu" class="navbar hidden-sm hidden-xs">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggle collapsed" data-target="#primaryNavbar" data-toggle="collapse" type="button">
@@ -59,16 +58,10 @@
 				<div class="navbar-collapse collapse reset-padding" id="primaryNavbar">
 					<ul class="primary-menu-links nav navbar-nav">
 						<li>
-							<a href="login.html">إعلانات</a>
-						</li>
-						<li>
 							<a href="datacenter.html">عروض خاصة</a>
 						</li>
 						<li>
 							<a href="faq.html">أسئلة متكررة</a>
-						</li>
-						<li>
-							<a href="affiliate.html">برنامج الإحالات</a>
 						</li>
 						<li>
 							<a href="login.html">منطقة العملاء</a>
@@ -83,7 +76,8 @@
 						<li>
 							<a href="mailto:info@hl.net.sa"><i class="fa fa-envelope-o"></i></a>
 						</li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li>
+							<a href="#"><i class="fa fa-linkedin"></i></a></li>
 						<li>
 							<a href="#"><i class="fa fa-facebook"></i></a>
 						</li>
@@ -99,7 +93,7 @@
 				</div>
 			</div>
 		</nav>	
-		<nav class="navbar " id="secondaryMenu">
+		<nav id="secondaryMenu" class="navbar">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggle collapsed" data-target="#secondaryNavbar" data-toggle="collapse" type="button">
@@ -119,6 +113,9 @@
 									<a href="shared-hosting.html">المشتركة</a>
 								</li>
 								<li>
+									<a href="#">إستضافة البريد الإلكتروني</a>
+								</li>
+								<li>
 									<a href="vps-hosting.html">سيرفرات VPS</a>
 								</li>
 								<li>
@@ -126,23 +123,33 @@
 								</li>
 							</ul>
 						</li>
-						<li>
-							<a href="domains.html"><i class="fa fa-at fa-fw"></i>النطاقات</a>
-						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-copy fa-fw"></i>الإيميلات <span class="caret"></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-ambulance fa-fw"></i>الدعم الفني <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="about.html">About</a>
+									<a href="shared-hosting.html">دعم المواقع</a>
 								</li>
 								<li>
-									<a href="faq.html">FAQ</a>
+									<a href="vps-hosting.html">دعم السيرفرات</a>
+								</li>
+							</ul>
+						</li>
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-magic fa-fw"></i>الخدمات الأخرى <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								
+								<li>
+									<a href="#">شهادات SSL</a>
 								</li>
 								<li>
-									<a href="datacenter.html">Datacenter</a>
+									<a href="faq.html">تراخيص vBulletin</a>
 								</li>
 								<li>
-									<a href="testimonial.html">Testimonial</a>
+									<a href="datacenter.html">إستضافة SSH</a>
+								</li>
+								<li>
+									<a href="testimonial.html">تراخيص cPanel</a>
 								</li>
 								<li>
 									<a href="login.html">Login</a>
@@ -169,39 +176,43 @@
 		</nav>
 		<div id="headSlider">
 			<div id="carouselInner" class="owl-carousel">
-				<div class="carouselItem">
+				<div class="carouselItem greyer">
 					<div class="container">
-						<div class="row featurette">
-							<div class="col-md-7 text-left">
-								<h2 class="featurette-heading">جننوك وتبي تنقل؟<small class="featurette-subheading">أبرك الساعات وحياك الله</small></h2>
-								<p class="lead">انقل اليوم والمدة الباقية بالإٍستضافة السابقة خذها عندنا ببلاش</p>
-								<a class="btn btn-lg btn-custom-transparent" href="#">تبي معلومات أكثر؟</a>
-							</div>
-							<div class="col-md-5 text-right">
-								<img class="featurette-image img-responsive" src="templates/hardstrap/assets/img/header-slider-img/angry.png">
+						<div class="featurette">
+							<div class="row">
+								<div class="col-md-7 text-left">
+									<h2 class="featurette-heading">جننوك وتبي تنقل؟<small class="featurette-subheading">أبرك الساعات وحياك الله</small></h2>
+									<p class="lead">انقل اليوم والمدة الباقية بالإٍستضافة السابقة خلها علينا</p>
+									<a class="btn btn-lg btn-custom-transparent greyer" href="#">إفتح تذكرة وإزهلها</a>
+								</div>
+								<div class="col-md-5 text-center">
+									<img class="featurette-image img-responsive" src="templates/hardstrap/assets/img/header-slider-img/angry.png">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="carouselItem">
+				<!--<div class="carouselItem greyer">
 					<div class="container">
-						<div class="row featurette">
-							<div class="col-md-7 col-md-push-5 text-right">
-								<h2 class="featurette-heading">الإستضافة المشتركة<small class="featurette-subheading">للمواقع</small></h2>
-								<p class="lead">مالذ وطاب من خطط الإٍستضافة المشتركة الآن وبعد نقرات زر بسيطة</p>
-								<a class="btn btn-lg btn-custom-reverse" href="#">تبي معلومات أكثر؟</a>
-							</div>
-							<div class="col-md-5 col-md-pull-7 text-left">
-								<img class="featurette-image img-responsive" data-src="holder.js/300x300/auto" alt="Generic placeholder image">
+						<div class="row">
+							<div class="featurette">
+								<div class="col-md-7 col-md-push-5 text-right">
+									<h2 class="featurette-heading">الإستضافة المشتركة<small class="featurette-subheading">للمواقع</small></h2>
+									<p class="lead">مالذ وطاب من خطط الإٍستضافة المشتركة الآن وبعد نقرات زر بسيطة</p>
+									<a class="btn btn-lg btn-custom-reverse" href="#">تبي معلومات أكثر؟</a>
+								</div>
+								<div class="col-md-5 col-md-pull-7 text-center">
+									<img class="featurette-image img-responsive" data-src="holder.js/300x300/auto" alt="Generic placeholder image">
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		
 		</div>
 	</div>
-	<div id="requestQuote" class="randomSection bg-primary text-reverse">
+	<div id="requestQuote" class="sectionSmall bg-primary text-white">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 text-right">
@@ -214,8 +225,7 @@
 			</div>
 		</div>
 	</div>	
-	
-	<div id="domainSelector" class="text-reverse text-center">
+	<div id="domainSelector" class="sectionBig bg-blue text-white text-center">
 		<div class="container">
 			<div class="row content">
 				<div class="col-md-12">
@@ -285,7 +295,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="features">
+	<div id="features" class="sectionBig">
 		<div class="container">
 			<div class="section-title underlineGreen">
 				<h1>ليش تختارنا؟</h1>
@@ -376,9 +386,53 @@
 				</div>
 			</div>
 			
+			<div class="row text-center">
+				<div class="col-md-3 col-sm-6 feature-item">
+					<div class="feature-item-icon hc-margin">
+						<i class="fa fa-desktop"></i>
+					</div>
+					<div class="feature-item-content">
+						<h4>هاردسكات SSD</h4>
+						<p>خوادم الإستضافة لدينا بأقرا Solid State. يعني تصفح أسرع لموقعك</p>
+						
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 feature-item">
+					<div class="feature-item-icon hc-margin">
+						<i class="fa fa-dashboard"></i>
+					</div>
+					<div class="feature-item-content">
+						<h4>ما بعد البيع</h4>
+						<p>لا يقف دورنا عند تقديم الخدمة, بل نبقى على متابعة مستمرة معكم من أجل حماية منتجاتكم وتطويرها والإحتفاظ بالنسخ الإحتياطية اليومية والأسبوعية والشهرية</p>
+						
+					</div>
+				</div>
+				
+				<div class="col-md-3 col-sm-6 feature-item">
+					<div class="feature-item-icon hc-margin">
+						<i class="fa fa-shield"></i>
+					</div>
+					<div class="feature-item-content">
+						<h4>30 يوم ضمان إسترجاع</h4>
+						<p>مش عاجبتك الخدمة؟ مع أن هالشي شبه مستحيل بس إذا ماعجبتك, لك مدة 30 يوم تسترجع كامل مبلغ الإستضافة</p>
+						
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 feature-item">
+					<div class="feature-item-icon hc-margin">
+						<i class="fa fa-cog"></i>
+					</div>
+					<div class="feature-item-content">
+						<h4>حماية ضد DDOS</h4>
+						<p>خوادمنا وخططنا محمية بشكل تام ومجاني من هجمات DDOS Attack, وليس عليك التفكير بها بعد اليوم</p>
+						
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</div>
-	<div data-bg-src="templates/hardstrap/assets/img/background-img/vps-bg.jpg" id="vpsPricing" class="text-reverse">
+	<div id="vpsPricing" class="text-white sectionBig darker bgPicture" data-bg-src="templates/hardstrap/assets/img/background-img/vps-bg.jpg">
 		<div class="container">
 			<div class="row content">
 				<div class="col-md-12 top-content">
@@ -416,7 +470,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="randomSection">
+	<div id="test1" class="sectionSmall">
 		<div class="container">
 			<div class="row">
 				<div class="featurette">
@@ -433,7 +487,7 @@
 			</div>
 		</div>
 	</div>	
-	<div id="paymentMethods" class="randomSection">
+	<div id="paymentMethods" class="sectionSmall">
 		<div class="container">
 			<div class="section-title underlineGreen  ">
 				<h1 class="featurette-heading text-center">طرق الدفع</h1>
@@ -469,7 +523,6 @@
 			</div>
 		</div>
 	</div>	
-	
 	<div id="separatorArrow" class="bg-orange">
 			<div class="container">
 				<div class="text-center">
@@ -477,7 +530,7 @@
 				</div>
 			</div>
 		</div>	
-	<div class="randomSection">
+	<div id="test2" class="sectionSmall">
 		<div class="container">
 			<div class="row">
 				<div class="featurette">
@@ -505,7 +558,7 @@
 				</div>
 			</div>
 		</div>
-	<div class="randomSection">
+	<div id="test3" class="sectionSmall">
 		<div class="container">
 			<div class="row">
 				<div class="featurette">
@@ -529,7 +582,7 @@
 				</div>
 			</div>
 		</div>
-	<div class="randomSection">
+	<div id="test4" class="sectionSmall">
 		<div class="container">
 			<div class="row">
 				<div class="featurette">
@@ -553,7 +606,7 @@
 				</div>
 			</div>
 		</div>
-	<div id="features">
+	<div id="freeFeatures" class="sectionBig">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-md-3 col-sm-6 feature-item">
@@ -601,7 +654,7 @@
 			
 		</div>
 	</div>
-	<div class="greenBack text-reverse">
+	<div id="test5" class="sectionBig bg-green text-white">
 		<div class="container">
 			<div class="row">
 				<div class="featurette">
@@ -611,14 +664,14 @@
 						<p>كلام عادي مع صورة على الجانب الأيسر, طبعاً بجرب أشياء ثانية مثل كلام بدون هيدنق وكلام بدون صورة وغيره وغيره. نجرب لو كتبنا كلام أكثر وش بيصير, هل بيتخبط السطر ولا بيصير الوضع عادي ومافيه مشكلة احط سطور وكلام قد ما أحتاج وماراح يصير شي غلط, وهل لو حطيت خصائص وأشياء أكثر بتخرب السالفة ولا وضعي بالسليم؟</p>
 						<a class="btn btn-lg btn-custom-reverse" href="#">تبي معلومات أكثر؟</a>
 					</div>
-					<div class="col-md-5 col-md-pull-7">
-						<img class="featurette-image img-responsive pull-left" src="templates/hardstrap/assets/img/header-slider-img/angry.png">
+					<div class="col-md-5 col-md-pull-7 text-center">
+						<img class="featurette-image img-responsive" src="templates/hardstrap/assets/img/header-slider-img/angry.png">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="services">
+	<div id="services" class="sectionSmall">
 		<div class="service">
 			<div class="container">
 				<div class="section-title underlineGreen">
@@ -726,7 +779,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="counter" data-bg-src="templates/hardstrap/assets/img/counter-img/counter-bg.jpg" id="Counter">
+	<div id="Counter" class="counter bgPicture bluer text-center text-white sectionBig" data-bg-src="templates/hardstrap/assets/img/counter-img/counter-bg.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-6 col-xxs-12">
@@ -761,7 +814,7 @@
 			</div>
 		</div>
     </div>
-	<div id="pricing">
+	<div id="pricing" class="sectionBig bg-silver">
 		<div class="container">
 			<div class="section-title">
 				<h2>Populer Pricing</h2>
@@ -890,7 +943,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="randomSection bg-grey text-reverse text-center">
+	<div id="test6" class="sectionSmall bg-grey text-white text-center">
 		<div class="container">
 			<div class="row">
 				<div class="featurette">
@@ -911,7 +964,7 @@
 			</div>
 		</div>
 	</div>	
-	<div id="pricingTable">
+	<div id="pricingTable" class="sectionBig">
 		<div class="container">
 			<div class="row reset-margin">
 				<div class="col-md-3 col-sm-6 pricing-table-item mt-md">
@@ -987,7 +1040,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="randomSection bg-orange text-reverse text-left">
+	<div id="test7" class="sectionSmall bg-orange text-white text-left">
 		<div class="container">
 			<div class="row">
 				<div class="featurette">
@@ -1008,7 +1061,7 @@
 			</div>
 		</div>
 	</div>	
-	<div id="pricingTable2" class="domains-page">
+	<div id="pricingTable2" class="sectionBig bg-silver">
 		<div class="container">
 			<table>
 				<thead>
@@ -1114,7 +1167,7 @@
 			</table>
 		</div>
 	</div>
-	<div class="randomSection bg-blue text-reverse text-right">
+	<div id="test8" class="sectionSmall bg-blue text-white text-right">
 		<div class="container">
 			<div class="row">
 				<div class="featurette">
@@ -1136,87 +1189,20 @@
 		</div>
 	</div>	
 	
-	
-	<div id="compare">
-		<div class="container">
-			<table>
-				<thead>
-					<tr>
-						<th>SERVER</th>
-						<th>CPU</th>
-						<th>RAM</th>
-						<th>HDD</th>
-						<th>IP ASSIGNMENTS</th>
-						<th>BANDWIDTH</th>
-						<th>COST</th>
-						<th>CUPON</th>
-						<th>ORDER</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td data-label="SERVER">Intel® i5-4590New (Quad-Core, 4x 3,7 Ghz)</td>
-						<td data-label="CPU">3.7 GHz</td>
-						<td data-label="RAM">32 GB DDR3</td>
-						<td data-label="HDD">2x 256 SSD (96,000 IOPS)</td>
-						<td data-label="IP ASSIGNMENTS">1 usable IPv4 (up to 3 more)</td>
-						<td data-label="BANDWIDTH">1,000 Mbit/s Unlimited/MONTH</td>
-						<td data-label="COST">$224.99/mo</td>
-						<td data-label="CUPON">10offall</td>
-						<td data-label="ORDER"><a href="#" class="btn btn-custom">Order Now</a></td>
-					</tr>
-					<tr>
-						<td data-label="SERVER">Intel® i5-4590New (Quad-Core, 4x 3,7 Ghz)</td>
-						<td data-label="CPU">3.7 GHz</td>
-						<td data-label="RAM">32 GB DDR3</td>
-						<td data-label="HDD">2x 256 SSD (96,000 IOPS)</td>
-						<td data-label="IP ASSIGNMENTS">1 usable IPv4 (up to 3 more)</td>
-						<td data-label="BANDWIDTH">1,000 Mbit/s Unlimited/MONTH</td>
-						<td data-label="COST">$224.99/mo</td>
-						<td data-label="CUPON">10offall</td>
-						<td data-label="ORDER"><a href="#" class="btn btn-custom">Order Now</a></td>
-					</tr>
-					<tr>
-						<td data-label="SERVER">Intel® i5-4590New (Quad-Core, 4x 3,7 Ghz)</td>
-						<td data-label="CPU">3.7 GHz</td>
-						<td data-label="RAM">32 GB DDR3</td>
-						<td data-label="HDD">2x 256 SSD (96,000 IOPS)</td>
-						<td data-label="IP ASSIGNMENTS">1 usable IPv4 (up to 3 more)</td>
-						<td data-label="BANDWIDTH">1,000 Mbit/s Unlimited/MONTH</td>
-						<td data-label="COST">$224.99/mo</td>
-						<td data-label="CUPON">10offall</td>
-						<td data-label="ORDER"><a href="#" class="btn btn-custom">Order Now</a></td>
-					</tr>
-					<tr>
-						<td data-label="SERVER">Intel® i5-4590New (Quad-Core, 4x 3,7 Ghz)</td>
-						<td data-label="CPU">3.7 GHz</td>
-						<td data-label="RAM">32 GB DDR3</td>
-						<td data-label="HDD">2x 256 SSD (96,000 IOPS)</td>
-						<td data-label="IP ASSIGNMENTS">1 usable IPv4 (up to 3 more)</td>
-						<td data-label="BANDWIDTH">1,000 Mbit/s Unlimited/MONTH</td>
-						<td data-label="COST">$224.99/mo</td>
-						<td data-label="CUPON">10offall</td>
-						<td data-label="ORDER"><a href="#" class="btn btn-custom">Order Now</a></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	
-	<div id="stillDontKnow" class="randomSection bg-orange text-reverse">
+	<div id="stillDontKnow" class="sectionSmall bg-orange text-white">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 text-left">
+				<div class="col-md-8 text-right">
 					<h1>تحس كلامنا واجد وللآن ماعرفت وش تبي؟</h1>
 				</div>
-				<div class="col-md-4 ">
-					<a class="btn btn-lg btn-custom text-right" href="#">إفتح تذكرة وإسألنا</a>
+				<div class="col-md-4 text-left">
+					<a class="btn btn-x-lg btn-custom" href="#">إفتح تذكرة وإسألنا</a>
 				</div>
 			</div>
 		</div>
 	</div>	
-	<div id="footerBg" data-bg-src="templates/hardstrap/assets/img/background-img/brands-bg.jpg" >
-		<div id="brands">
+	<div id="footerBg" class="bgPicture" data-bg-src="templates/hardstrap/assets/img/background-img/brands-bg.jpg" >
+		<div id="brands" class="sectionSmall x-darker">
 			<div class="container">
 				<div class="row brands-slider">
 					<div class="col-md-12">
@@ -1226,7 +1212,7 @@
 			</div>
 		</div>
 			
-		<div id="footer">
+		<div id="footer" class="sectionSmall darker">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 footer-widget">
@@ -1246,30 +1232,36 @@
 						<h4>الأحكام والشروط</h4>
 						<ul>
 							<li>
+								<a href="#">المدونة</a>
+							</li>
+							<li>
 								<a href="#">الشروط والأحكام</a>
+							</li>
+							<li>
+								<a href="#">طرق الدفع</a>
 							</li>
 							<li>
 								<a href="#">المزيد عن الطبقات</a>
 							</li>
+							<li>
+								<a href="#">أسئلة متكررة</a>
+							</li>
+							<li>
+								<a href="#">خريطة الموقع</a>
+							</li>
+							<li>
+								<a href="#">إتصل بنا</a>
+							</li>
 						</ul>
 					</div>
 					<div class="col-md-3 col-sm-6 footer-widget">
-						<h4>الخدمات الإضافية</h4>
+						<h4>أمور أخرى</h4>
 						<ul>
 							<li>
-								<a href="#">شهادات SSL</a>
+								<a href="affiliate.html">منطقة العملاء</a>
 							</li>
 							<li>
-								<a href="#">إستضافة المطورين</a>
-							</li>
-							<li>
-								<a href="#">تراخيص vBulletin</a>
-							</li>
-							<li>
-								<a href="#">تراخيص السي بنل</a>
-							</li>
-							<li>
-								<a href="#">نقل المواقع والبيانات</a>
+								<a href="affiliate.html">برنامج الإحالات</a>
 							</li>
 						</ul>
 					</div>
@@ -1277,10 +1269,18 @@
 			</div>
 		</div>
 		
-		<div id="copyright">
+		<div id="copyright" class="sectionSmall text-white text-center x-darker">
 			<div class="container">
-				<p class="pull-right">جميع الحقوق محفوظة 2017 &copy; <a href="#">الطبقات الصلبة</a>. للإستضافة وخدمات المواقع.</p>
-				<p class="pull-left">نقبل الدفع بـ: <img alt="" src="templates/hardstrap/assets/img/payment-img/payment-methods.png"></p>
+				<div class="row">
+					<div class="col-md-7">
+						<p class="text-right">جميع الحقوق محفوظة 2017 &copy; <a href="#">للطبقات الصلبة</a> للإستضافة وخدمات المواقع</p>
+					</div>
+					<div class="col-md-5">
+						<p class="text-left">نقبل الدفع بـ: <img alt="" src="templates/hardstrap/assets/img/payment-img/payment-methods.png"></p>
+					</div>
+				</div>
+				
+				
 			</div>
 		</div>
 		
