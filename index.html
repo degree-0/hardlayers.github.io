@@ -32,6 +32,29 @@
     <![endif]-->
 </head>
 <body>
+<!-- FULLSCREEN MODAL CODE (.fullscreen) -->
+	<div class="modal fade fullscreen" id="menuModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content" style="color:#fff;">
+				<div class="modal-header" style="border:0;">
+						<button type="button" class="close btn btn-link" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close fa-lg" style="color:#999;"></i></button>	
+						<h4 class="modal-title text-center"><span class="sr-only">main navigation</span></h4>
+				</div>
+				<div class="modal-body">
+					<ul class="list-inline row">
+						<li class="col-xs-6"><a href="#" class="big">Hello</a></li>
+						<li class="col-xs-6"><a href="#" class="big">A Menu Item</a></li>
+						<li class="col-xs-6"><a href="#" class="big">Another Item</a></li>
+						<li class="col-xs-6"><a href="#" class="big">This One Too!!</a></li>
+						<li class="col-xs-6"><a href="http://meagency.com" class="big">me.agency</a></li>
+					</ul>
+					<div class="text-center btn-container">
+						<a class="btn btn-x-lg btn-custom-reverse btn-block text-right" href="#">إفتح تذكرة وإسألنا</a>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.fullscreen -->
 	<div id="promo" class="alert alert-danger hidden-sm hidden-xs">
 		<div class="container">
 			<div class="alert-icon">
@@ -96,12 +119,19 @@
 		<nav id="secondaryMenu" class="navbar">
 			<div class="container">
 				<div class="navbar-header">
+				<button type="button" class="btn text-white btn-link navbar-toggle collapsed" data-toggle="modal" data-target="#menuModal">
+					<span class="sr-only">Toggle navigation</span>
+					<div class="fa fa-circle"></div>
+					<div class="fa fa-circle"></div>
+					<div class="fa fa-circle"></div>
+				</button>
 					<button class="navbar-toggle collapsed" data-target="#secondaryNavbar" data-toggle="collapse" type="button">
 					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+						<div class="fa fa-circle"></div>
+						<div class="fa fa-circle"></div>
+						<div class="fa fa-circle"></div>
 					</button>
+					
 					<a class="navbar-brand" href="index.html"><img src="templates/hardstrap/assets/img/logo.png" /></a>
 				</div>
 				<div class="navbar-collapse collapse navbar-left reset-padding" id="secondaryNavbar">
@@ -112,14 +142,18 @@
 								<li>
 									<a href="shared-hosting.html">المشتركة</a>
 								</li>
-								<li>
-									<a href="#">إستضافة البريد الإلكتروني</a>
-								</li>
+								
 								<li>
 									<a href="vps-hosting.html">سيرفرات VPS</a>
 								</li>
 								<li>
 									<a href="dedicated-hosting.html">السيرفرات الكاملة</a>
+								</li>
+								<li>
+									<a href="#">إستضافة البريد الإلكتروني</a>
+								</li>
+								<li>
+									<a href="#">إستضافة النسخ الإحتياطي</a>
 								</li>
 							</ul>
 						</li>
@@ -138,7 +172,9 @@
 						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-magic fa-fw"></i>الخدمات الأخرى <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								
+								<li>
+									<a href="#">تسجيل/نقل النطاقات</a>
+								</li>
 								<li>
 									<a href="#">شهادات SSL</a>
 								</li>
@@ -151,18 +187,7 @@
 								<li>
 									<a href="testimonial.html">تراخيص cPanel</a>
 								</li>
-								<li>
-									<a href="login.html">Login</a>
-								</li>
-								<li>
-									<a href="signup.html">Signup</a>
-								</li>
-								<li>
-									<a href="affiliate.html">Affiliate</a>
-								</li>
-								<li>
-									<a href="404.html">404</a>
-								</li>
+								
 							</ul>
 						</li>
 						
@@ -220,7 +245,7 @@
 					<p>بنساعدك تختار الخدمات اللي تحتاجها عشان تصير فكرتك واقع!</p>
 				</div>
 				<div class="col-md-4 text-left">
-					<a class="btn btn-lg btn-custom-reverse text-right" href="#">إفتح تذكرة وإسألنا</a>
+					<a class="btn btn-x-lg btn-custom-reverse text-right" href="#">إفتح تذكرة وإسألنا</a>
 				</div>
 			</div>
 		</div>

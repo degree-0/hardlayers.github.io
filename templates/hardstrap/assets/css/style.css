@@ -99,14 +99,15 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 sm
 }
 .underlineGreen{
 	position:relative;
+	
 }
 .underlineGreen:before{
 	content: " ";
     position: absolute;
     bottom: -15px;
     left: 50%;
-    width: 50px;
-    height: 2px;
+    width: 40%;
+    height: 1px;
     background-color: #9dca12;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -567,6 +568,7 @@ a.btn-custom-transparent:hover {
 	transition: background-color .25s;
 	-webkit-transition: background-color .25s;
     text-transform: uppercase;
+	font-size:14px;
 }
 .secondary-menu-links>li>a>.fa {
     display: block;
@@ -619,6 +621,62 @@ a.btn-custom-transparent:hover {
     background-color: #FF6C3A;
     color: #fff;
 }
+
+.navbar-toggle{
+	font-size:5px;
+	border:none;
+	margin:14px 6px 2px;
+}
+.navbar-toggle > div{
+	margin:0 1px;
+	vertical-align:center;
+	display:inline-block;
+}
+
+ /* FULL SCREEN MODAL STYLES
+-------------------------------------------------- */
+.fullscreen .modal-dialog {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	padding: 0;
+	color: #333;
+}
+
+.fullscreen .modal-content {
+	height: 100%;
+	min-height: 100%;
+	border-radius: 0;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.97);
+	overflow:auto;
+}
+
+.fullscreen .modal-body a {
+	color: #ffffff;
+	font-size: 200%;
+}
+
+.fullscreen .modal-body .btn-container {
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	left:0px;
+	width:100%;
+	padding:12px;
+}
+
+.fullscreen .modal-body .btn {
+	color: #fff;
+	font-size: 100%;
+}
+
+@media (max-width: 480px){
+
+
+}
+
 
 /* === Normal Pages Section === */
 #page .section-title{
@@ -1128,13 +1186,13 @@ a.btn-custom-transparent:hover {
     font-size: 20px;
     margin: 0;
     position: relative;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 .footer-widget h4:before {
     position: absolute;
     content: " ";
-	width: 40px;
-    height: 2px;
+	width: 40%;
+    height: 1px;
     background-color: #9dca12;
     bottom: 0;
 }
