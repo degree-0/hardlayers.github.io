@@ -149,6 +149,19 @@ a.btn-custom:hover {
     background-color: #82b013;
     box-shadow: none
 }
+a.btn-custom-orange {
+    background-color: #FF6C3A;
+	border:1px solid #fff;
+    border-radius: 0;
+    -webkit-transition: background-color .25s;
+    transition: background-color .25s;
+    text-transform: uppercase;
+}
+a.btn-custom-orange:focus,
+a.btn-custom-orange:hover {
+    background-color: #82b013;
+    box-shadow: none
+}
 a.btn-custom-reverse {
     background-color: #82b013;
     border-radius: 0;
@@ -161,11 +174,13 @@ a.btn-custom-reverse:hover {
     background-color: #2e3138;
     box-shadow: none;
 }
+a.btn-custom-orange.btn-lg,
 a.btn-custom-reverse.btn-lg,
 a.btn-custom.btn-lg {
     padding: 12px 20px;
     font-size: 16px;
 }
+a.btn-custom-orange.btn-x-lg,
 a.btn-custom-reverse.btn-x-lg,
 a.btn-custom.btn-x-lg {
 	font-size:26px;
@@ -462,7 +477,6 @@ a.btn-custom-transparent:hover {
     line-height:20px;
 }
 
-
 /* === Primary Menu === */
 #primaryMenu {
     margin: 0;
@@ -557,10 +571,20 @@ a.btn-custom-transparent:hover {
 #secondaryMenu a.navbar-brand {
     display: block;
     padding: 2px 0;
-    margin-top: 8px;
+    margin-top: 0;
     margin-right: 0;
-    font-size: 24px;
-    font-weight: 700
+    font-size: 16px;
+    font-weight: 100;
+}
+#secondaryMenu.affix a.navbar-brand{
+	height:100%;
+}
+#secondaryMenu a.navbar-brand p{
+	font-size:16px;
+	margin-bottom:0px;
+}
+#secondaryMenu.affix a.navbar-brand p{
+	margin-bottom:12px;
 }
 .secondary-menu-links li a {
     color: #fff;
@@ -633,8 +657,7 @@ a.btn-custom-transparent:hover {
 	display:inline-block;
 }
 
- /* FULL SCREEN MODAL STYLES
--------------------------------------------------- */
+ /* FULL SCREEN MODAL STYLES */
 .fullscreen .modal-dialog {
 	margin: 0;
 	width: 100%;
@@ -643,7 +666,6 @@ a.btn-custom-transparent:hover {
 	padding: 0;
 	color: #333;
 }
-
 .fullscreen .modal-content {
 	height: 100%;
 	min-height: 100%;
@@ -660,12 +682,10 @@ a.btn-custom-transparent:hover {
 .fullscreen .modal-body ul li{
 	margin-bottom:8px;
 }
-
 .fullscreen .modal-body a {
 	color: #ffffff;
 	font-size: 100%;
 }
-
 .fullscreen .modal-body .btn-container {
 	position:relative;
 	bottom:0px;
@@ -674,18 +694,10 @@ a.btn-custom-transparent:hover {
 	width:100%;
 	padding:12px;
 }
-
-
 .fullscreen .modal-body .btn {
 	color: #fff;
 	font-size: 100%;
 }
-
-@media (max-width: 480px){
-
-
-}
-
 
 /* === Normal Pages Section === */
 #page .section-title{
@@ -1056,7 +1068,7 @@ a.btn-custom-transparent:hover {
 #Counter .counter-text {
     font-size:18px;	
 }
-#Counter .counter-number {
+#Counter .counterNumber {
 	margin-top: 24px;
     font-size: 42px
 }
@@ -1358,7 +1370,7 @@ a.btn-custom-transparent:hover {
         padding-bottom: 0
     }
     .feature-item {
-        padding-bottom: 50px
+        padding-bottom: 12px
     }
     #compare table thead,
     #features hr,
@@ -1368,8 +1380,12 @@ a.btn-custom-transparent:hover {
 
     .feature-item {
         border-bottom: 1px solid #e9e9e9;
-        margin-bottom: 30px
+        margin-bottom: 0px
     }
+	
+	.feature-item-content {
+		margin-top: 6px;
+	}
     #compare table,
     #pricingTable2 table {
         border: 0
@@ -1418,11 +1434,15 @@ a.btn-custom-transparent:hover {
     }
 }
 @media screen and (max-width:767px) {
-    .carouselItem{
-		padding
+    
+	#footer{
+		text-align:center;
+	}
+	.carouselItem{
+		padding:70px 12px 40px;
 	}
 	.carouselItem p.lead{
-		padding
+		margin
 	}
 	.primary-menu-links>li:first-child>a {
 		padding-right: 15px;
@@ -1455,7 +1475,7 @@ a.btn-custom-transparent:hover {
     }
     #secondaryMenu a.navbar-brand {
         margin-top: 0;
-        padding-left: 15px
+        padding-left: 15px;
     }
     .secondary-menu-links {
         margin-left: 0;
