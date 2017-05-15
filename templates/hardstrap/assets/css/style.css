@@ -1418,7 +1418,13 @@ a.btn-custom-transparent:hover {
     }
 }
 @media screen and (max-width:767px) {
-    .primary-menu-links>li:first-child>a {
+    .carouselItem{
+		padding
+	}
+	.carouselItem p.lead{
+		padding
+	}
+	.primary-menu-links>li:first-child>a {
 		padding-right: 15px;
 	}
 	#primaryNavbar{
