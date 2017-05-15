@@ -652,20 +652,29 @@ a.btn-custom-transparent:hover {
 	background: rgba(0, 0, 0, 0.97);
 	overflow:auto;
 }
+.fullscreen .modal-body{
+	height: 100%;
+	min-height: 100%;
+	padding-top:0;
+}
+.fullscreen .modal-body ul li{
+	margin-bottom:8px;
+}
 
 .fullscreen .modal-body a {
 	color: #ffffff;
-	font-size: 200%;
+	font-size: 100%;
 }
 
 .fullscreen .modal-body .btn-container {
-	position:fixed;
+	position:relative;
 	bottom:0px;
 	right:0px;
 	left:0px;
 	width:100%;
 	padding:12px;
 }
+
 
 .fullscreen .modal-body .btn {
 	color: #fff;
