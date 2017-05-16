@@ -456,11 +456,6 @@ a.btn-custom-transparent:hover {
     margin-top: 0;
 }
 
-#requestQuote a.btn{
-	border:1px solid #ffffff;
-	margin-top:20px;
-}
-
 /* === Promo Section === */
 #promo {
     z-index: 1;
@@ -475,6 +470,10 @@ a.btn-custom-transparent:hover {
 }
 #promo .close {
     line-height:20px;
+}
+
+#header{
+	
 }
 
 /* === Primary Menu === */
@@ -511,8 +510,8 @@ a.btn-custom-transparent:hover {
 #primaryMenu .navbar-toggle .icon-bar {
     background-color: #9dca12;
 }
-.primary-menu-links li a,
-.primary-menu-links>li>a {
+#primaryMenu .primary-menu-links li a,
+#primaryMenu .primary-menu-links>li>a {
     font-size: 13px;
     font-weight: normal;
     text-transform: uppercase;
@@ -524,14 +523,18 @@ a.btn-custom-transparent:hover {
     background-color: transparent;
     color: #FF6C3A;
 }
-.primary-menu-links>li:first-child>a {
+#primaryMenu .primary-menu-links>li:first-child>a {
     padding-right: 0
 }
-.primary-social-menu-links {
+#primaryMenu .primary-social-menu-links {
     margin-left: 0
 }
-.primary-social-menu-links>li:last-child>a {
-    padding-left: 0
+#primaryMenu .primary-social-menu-links .chatWithUs{
+	width: 130px;
+	text-align:center;
+}
+#primaryMenu .primary-social-menu-links .bluer:hover{
+	background-color: #FF6C3A !important;
 }
 
 /* === Secondary Menu === */
@@ -792,6 +795,13 @@ a.btn-custom-transparent:hover {
 .owl-carousel .owl-item img, .owl-carousel .owl-item img.responsive {
 	display:inline-block;
 }
+
+
+#requestQuote a.btn{
+	border:1px solid #ffffff;
+	margin-top:20px;
+}
+
 
 /* 	Get Domin offer
 */
