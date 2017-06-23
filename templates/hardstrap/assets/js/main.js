@@ -1,15 +1,11 @@
 //Affix an element
 $(document).ready(function() {
-    var affixElement = '#secondaryMenu';
+    var affixElement = '.toBeAffixed';
 	$(affixElement).affix({
 	  offset: {
 		// Distance of between element and top page
 		top: function () {
 		  return (this.top = $(affixElement).offset().top)
-		},
-		// when start #footer 
-		bottom: function () { 
-		  return (this.bottom = $('#copyright').outerHeight(true))
 		}
 	  }
 	});
@@ -40,7 +36,7 @@ $(document).ready(function() {
 		center:true,
 		nav:true,
 		autoplay: true,
-		autoplayTimeout:3000,
+		autoplayTimeout:9000,
 		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
 		autoplaySpeed: 600,
 		navSpeed: 900,
@@ -98,6 +94,13 @@ $(document).ready(function() {
 		window.setTimeout(offsetAnchor, 0);
 	});
 
+//Same Height Divs
+$(document).ready(function() {
+	$(function() {
+		$('.sameHeight').matchHeight();
+	});
+});
+	
 ! function($) {
     "use strict";
     $(document).ready(function() {
